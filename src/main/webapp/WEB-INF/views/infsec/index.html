@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=":http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation of the security level of information and communication infrastructure</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/infsec/new}" th:object="${securityList}">
+    <label for="security_staff_num">Enter the number of information security staff: </label>
+    <input type="text" th:field="*{security_staff_num}" id="security_staff_num"/>
+    <br>
+    <label for="siem">Do you have SIEM system? </label>
+    <input type="text" th:field="*{siem}" id="siem"/>
+    <br>
+    <label for="analyze_data">Do you have data analytics? </label>
+    <input type="text" th:field="*{analyze_data}" id="analyze_data"/>
+    <br>
+    <label for="integration_soc">Do you have integration with SOC: </label>
+    <input type="text" th:field="*{integration_soc}" id="integration_soc"/>
+    <br>
+
+    <input type="submit" value="Calculate!"/>
+</form>
+
+
+</body>
+</html>

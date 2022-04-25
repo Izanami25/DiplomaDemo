@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=":http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<div th:each="security : ${securityList}">
+    <p th:text="${security.getSecurity_staff_num() + ', ' + security.getSiem + ', ' + security.getAnalyze_data
+     + ', ' + security.getIntegration_soc}">Value</p>
+    <span>Security level:</span> <b> <p th:text="${security.getLevel}"></p> </b>
+    <br>
+</div>
+</body>
+</html>

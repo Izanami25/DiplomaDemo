@@ -5,6 +5,11 @@ public class Security {
     private String siem;
     private String analyze_data;
     private String integration_soc;
+    private double training;
+    private String policy;
+    private double password;
+    private double malware;
+
 
     private String level;
 
@@ -16,15 +21,6 @@ public class Security {
         this.level = level;
     }
 
-    private String message;
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
     public Security(){};
 
@@ -66,5 +62,37 @@ public class Security {
 
     public void setIntegration_soc(String integration_soc) {
         this.integration_soc = integration_soc;
+    }
+
+    public double getTraining() {
+        return training;
+    }
+
+    public void setTraining(double training) {
+        this.training = training;
+    }
+
+    public String getPolicy() {
+        return policy;
+    }
+
+    public void setPolicy(String policy) {
+        this.policy = policy;
+    }
+
+    public double getPassword() {
+        return password;
+    }
+
+    public void setPassword(double password) {
+        this.password = password;
+    }
+
+    public double getMalware() {
+        return malware;
+    }
+
+    public void setMalware(double malware) {
+        this.malware = malware;
     }
 }

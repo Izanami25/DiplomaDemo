@@ -45,13 +45,25 @@ public class CyberDAO {
         }
 
         if (security.getSiem().equals("yes")){
-            count += 20;
+            count += 10;
         }
         if (security.getAnalyze_data().equals("yes")){
-            count += 25;
+            count += 15;
         }
         if (security.getIntegration_soc().equals("yes")){
-            count += 40;
+            count += 20;
+        }
+        if (security.getTraining() >= 90.0){
+            count += 10;
+        }
+        if (security.getPolicy().equals("yes")){
+            count += 10;
+        }
+        if (security.getPassword() >= 90.0){
+            count += 10;
+        }
+        if (security.getMalware() >= 90.0){
+            count += 10;
         }
 
         System.out.println(count);

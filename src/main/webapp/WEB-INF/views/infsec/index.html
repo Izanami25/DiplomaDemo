@@ -19,6 +19,19 @@
     <label for="integration_soc">Do you have integration with SOC: </label>
     <input type="text" th:field="*{integration_soc}" id="integration_soc"/>
     <br>
+    <label for="training">Ratio of staff who obtained training program to overall number of staff (%)</label>
+    <input type="text" th:field="*{training}" id="training">
+    <br>
+    <label for="policy">Do you have information security policy?</label>
+    <input type="text" th:field="*{policy}" id="policy">
+    <br>
+    <label for="password">Ratio of staff number with satisfactory password to total number of staff (%)</label>
+    <input type="text" th:field="*{password}" id="password">
+    <br>
+    <label for="malware">Ratio of staff number with satisfactory password to total number of staff (%)</label>
+    <input type="text" th:field="*{malware}" id="malware">
+    <br>
+
 
     <input type="submit" value="Calculate!"/>
 </form>

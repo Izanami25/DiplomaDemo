@@ -7,7 +7,8 @@
 <body>
 <div th:each="security : ${securityList}">
     <p th:text="${security.getSecurity_staff_num() + ', ' + security.getSiem + ', ' + security.getAnalyze_data
-     + ', ' + security.getIntegration_soc}">Value</p>
+     + ', ' + security.getIntegration_soc + ', ' + security.Training + ', ' + security.Policy + ', ' + security.Password
+     + ', ' + security.getMalware}">Value</p>
     <span>Security level:</span> <b> <p th:text="${security.getLevel}"></p> </b>
     <br>
 </div>
